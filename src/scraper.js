@@ -72,14 +72,7 @@ const getInfo = (link) => {
             let imageURLSrc = $('.shirt-picture span img').attr('src');
             let imageURL = `http://shirts4mike.com/${imageURLSrc}`;
             let time = new Date().toString();
-                // let tshirt = {
-                //     "Title": title,
-                //     "Price": price,
-                //     "ImageURL": imageURL,
-                //     "URL": link,
-                //     "Time": time
-                // };
-                // tshirts.push(tshirt);
+               
             let date = new Date();
             let year = date.getFullYear();
                 let tshirt = {
