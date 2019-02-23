@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon scraper.js"
+    "start": "node src/scraper.js"
   },
   "repository": {
     "type": "git",
