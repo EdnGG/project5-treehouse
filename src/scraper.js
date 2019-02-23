@@ -69,22 +69,28 @@ const getInfo = (link) => {
             title = title.substring(9, title.length);
             //console.log(title)
             let price = $('.price').text();
-            // let imageURL = 'http://shirts4mike.com/' +
-            //     $('.shirt-picture span img').attr('src');
             let imageURLSrc = $('.shirt-picture span img').attr('src');
             let imageURL = `http://shirts4mike.com/${imageURLSrc}`;
-            //let imageURLSrc = $('.shirt-picture span img').attr('src');
             let time = new Date().toString();
-            let tshirt = {
-                "Title": title,
-                "Price": price,
-                "ImageURL": imageURL,
-                "URL": link,
-                "Time": time
-            };
-            tshirts.push(tshirt);
+                // let tshirt = {
+                //     "Title": title,
+                //     "Price": price,
+                //     "ImageURL": imageURL,
+                //     "URL": link,
+                //     "Time": time
+                // };
+                // tshirts.push(tshirt);
             let date = new Date();
             let year = date.getFullYear();
+                let tshirt = {
+                    "Title": title,
+                    "Price": price,
+                    "ImageURL": imageURL,
+                    "URL": link,
+                    "Time": time
+                };
+                tshirts.push(tshirt);
+
             let month = (date.getMonth() + 1).toString();
             if (month.length === 1) {
                 month = `0${month}`;
